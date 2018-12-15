@@ -1,0 +1,60 @@
+.reklamaEscape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+
+    @include tablet {
+        padding: 3rem 0;
+    }
+
+    @include desktop {
+        padding: 6rem 0;
+    }
+
+    &-text {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .title {
+            &:first-child {
+                flex-basis: 100%;
+                font-weight: normal;
+                font-size: 1.1rem;
+                margin: 0;
+
+                @include tablet {
+                    font-size: 1.25rem;
+                }
+
+                @include desktop {
+                    font-size: 1.45rem;
+                }
+            }
+
+            &:last-child {
+                font-size: 2.5rem;
+                margin: 1.5rem 0;
+
+                @include tablet {
+                    font-size: 3.5rem;
+                    margin: 0;
+                }
+
+                @include desktop {
+                    font-size: 4.5rem;
+                }
+            }
+        }
+    }
+
+    &-button {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}

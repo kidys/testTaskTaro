@@ -3,12 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="content">
-        <h1>Webpack Boilerplate</h1>
-        <h3>Replace this page with your own code</h3>
+    <div class="pageWrapper">
+        <div class="pageWrapper-header">
+            <div class="pageWrapper-inner">
+                <header class="header">
+                    <div class="logo logo_header">
+                        <a class="logo-link" href="home"><img class="logo-image" src="assets/images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="menu menu_header">
+                        <div class="menuBars">
+                            <span class="menuBars-inner" id="headerMenuMobileBtnOpen"><i class="fas fa-bars"></i></span>
+                        </div>
+                        <div class="menuListWrapper menuListWrapper_header">
+                            <div class="menuBars-close">
+                                <i class="far fa-times-circle" id="headerMenuMobileBtnClose"></i>
+                            </div>
+                            <ul class="menuList menuList_header">
+                                <li class="menuItem menuItem_header"><a href="home" class="menuLink menuLink_header">Home</a></li>
+                                <li class="menuItem menuItem_header"><a href="services" class="menuLink menuLink_header">Services</a></li>
+                                <li class="menuItem menuItem_header"><a href="clients" class="menuLink menuLink_header">Clients</a></li>
+                                <li class="menuItem menuItem_header"><a href="team" class="menuLink menuLink_header">Team</a></li>
+                                <li class="menuItem menuItem_header"><a href="contact" class="menuLink menuLink_header">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <section class="reklamaEscape">
+                    <div class="reklamaEscape-text">
+                        <h3 class="title">Can you build the website of my dreams?</h3>
+                        <h2 class="title">Yup, we can do that.</h2>
+                    </div>
+                    <div class="reklamaEscape-button">
+                        <a href="#" class="btn btn_reklamaEscape">Learn More</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="partition partition_white">
+            <div class="pageWrapper-inner pageWrapper-inner_main-content partition-content">
+                <div class="left">
+                    <h3 class="title">Web <strong>Development</strong></h3>
+                    <div class="text">
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                        <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/images/partitionImage1.png" alt="image" class="image">
+                </div>
+            </div>
+        </section>
+        <section class="partition partition_gray partition_reverse">
+            <div class="pageWrapper-inner pageWrapper-inner_main-content partition-content">
+                <div class="left">
+                    <h3 class="title">Identity <strong>Branding</strong></h3>
+                    <div class="text">
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                        <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/images/partitionImage2.png" alt="image" class="image">
+                </div>
+            </div>
+        </section>
+
+        <section class="features features_white">
+            <div class="pageWrapper-inner pageWrapper-inner_main-content features-content">
+                <ul class="featuresList">
+                    <li class="featuresItem">
+                        <div class="left">
+                            <div class="image">
+                                <i class="fas fa-male"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h4 class="title">Branding & Identity</h4>
+                            <div class="text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</div>
+                        </div>
+                    </li>
+                    <li class="featuresItem">
+                        <div class="left">
+                            <div class="image">
+                                <i class="far fa-window-maximize"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h4 class="title">Web & Graphic Design</h4>
+                            <div class="text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </div>
+                        </div>
+                    </li>
+                    <li class="featuresItem">
+                        <div class="left">
+                            <div class="image">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h4 class="title">Mobile App Development</h4>
+                            <div class="text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </div>
+                        </div>
+                    </li>
+                    <li class="featuresItem">
+                        <div class="left">
+                            <div class="image">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h4 class="title">Animations</h4>
+                            <div class="text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </div>
+                        </div>
+                    </li>
+                    <li class="featuresItem">
+                        <div class="left">
+                            <div class="image">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h4 class="title">UI/UX</h4>
+                            <div class="text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </div>
+                        </div>
+                    </li>
+                    <li class="featuresItem">
+                        <div class="left">
+                            <div class="image">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h4 class="title">Photography</h4>
+                            <div class="text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="pageWrapper-inner footer-content">
+                <div class="form form_footer">
+                    <div class="left">
+                        <h3 class="title">Say <strong>Hello</strong></h3>
+                        <div class="description">Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</div>
+                        <div class="contacts">
+                            <ul class="contactsList">
+                                <li class="contactsItem">
+                                    <div class="image"><i class="fas fa-mobile-alt"></i></div>
+                                    <div class="content">
+                                        <a href="tel:84165550000" class="contactsLink">(416) 555-0000</a>
+                                    </div>
+                                </li>
+                                <li class="contactsItem">
+                                    <div class="image"><i class="far fa-envelope"></i></div>
+                                    <div class="content">
+                                        <a href="mailto:hello@escape.com" class="contactsLink">hello@escape.com</a>
+                                    </div>
+                                </li>
+                                <li class="contactsItem">
+                                    <div class="image"><i class="fab fa-twitter"></i></div>
+                                    <div class="content">
+                                        <a href="https://twitter.com/escape" class="contactsLink">@escape</a>
+                                    </div>
+                                </li>
+                                <li class="contactsItem">
+                                    <div class="image"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="content">
+                                        <a href="https://facebook.com/escape" class="contactsLink">facebook.com/escape</a>
+                                    </div>
+                                </li>
+                                <li class="contactsItem">
+                                    <div class="image"><i class="fab fa-google-plus-g"></i></div>
+                                    <div class="content">
+                                        <a href="https://google.com/escape" class="contactsLink">plus.com/escape</a>
+                                    </div>
+                                </li>
+                                <li class="contactsItem">
+                                    <div class="image"><i class="fab fa-pinterest-p"></i></div>
+                                    <div class="content">
+                                        <a href="https://pinterest.com/escape" class="contactsLink">pinterest.com/escape</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <input type="text" class="textField" placeholder="Your Name *">
+                        <input type="email" class="textField" placeholder="Your E-mail *">
+                        <textarea name="" id="" cols="30" rows="10" class="textField textField_multiline" placeholder="Your Message *"></textarea>
+                        <div class="form-submitWrapper">
+                            <button class="btn btn_sendMessage btn_reklamaEscape">Send message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright copyright_footer">
+                    &copy; 2014 Escape by FreebiesXpress • Made In Toronto
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

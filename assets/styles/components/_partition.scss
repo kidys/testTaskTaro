@@ -1,0 +1,79 @@
+.partition {
+    &_white {
+        background-color: #fff;
+    }
+
+    &_gray {
+        background-color: #fafafa;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+
+        @include tablet {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+
+        @include desktop {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .title {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .image {
+            line-height: 0;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .left {
+        order: 1;
+        padding-right: 2rem;
+        box-sizing: border-box;
+
+        @include tablet {
+            flex-basis: 65%;
+        }
+
+        @include desktop {
+        }
+    }
+
+    .right {
+        order: 2;
+        box-sizing: border-box;
+        display: none;
+
+        @include tablet {
+            flex-basis: 35%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include desktop {
+        }
+    }
+
+    &_reverse {
+        .left {
+            order: 2;
+            padding-right: 0;
+        }
+
+        .right {
+            order: 1;
+            padding-right: 2rem;
+        }
+    }
+}

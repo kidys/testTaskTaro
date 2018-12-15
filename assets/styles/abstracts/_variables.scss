@@ -1,0 +1,18 @@
+$fontSizeBase: 16px;
+$fontFamily: 'Cuprum', sans-serif;
+
+$tablet-width: 768px;
+$desktop-width: 992px;
+
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}

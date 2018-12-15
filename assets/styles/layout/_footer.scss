@@ -1,0 +1,11 @@
+.footer {
+    background-color: #7690c5;
+
+    .description {
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
+}

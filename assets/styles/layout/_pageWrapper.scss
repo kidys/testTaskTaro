@@ -1,0 +1,21 @@
+.pageWrapper {
+    min-width: 320px;
+    width: 100%;
+
+    &-inner {
+        max-width: 940px;
+        padding: 0 10px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        &_main-content {
+            max-width: 860px;
+        }
+    }
+
+    &-header {
+        background: url('../images/bg.jpg') center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}

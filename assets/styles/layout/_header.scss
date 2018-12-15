@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

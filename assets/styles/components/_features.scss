@@ -1,0 +1,58 @@
+.features {
+    background-color: #fff;
+
+    &-content {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    &List {
+        list-style: none;
+        padding-left: 0;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &Item {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+
+        @include tablet {
+            flex-basis: 50%;
+        }
+
+        .left {
+            flex-basis: 20%;
+            box-sizing: border-box;
+            padding-right: 10px;
+
+            .image {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                background-color: #222;
+                color: #fff;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                font-size: 2rem;
+                margin: 0 auto;
+            }
+        }
+
+        .right {
+            flex-basis: 80%;
+
+            .title {
+                margin: 0;
+                font-size: 1.15rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
